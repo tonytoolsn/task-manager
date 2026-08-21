@@ -1,0 +1,67 @@
+name: Bug
+description: 有東西壞了
+title: "[fix] "
+labels: ["type:fix"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 現象
+      description: 你看到什麼
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期行為
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 實際行為
+    validations:
+      required: true
+
+  - type: dropdown
+    id: env
+    attributes:
+      label: 環境
+      options:
+        - 本機
+        - 正式站
+        - 兩者皆是
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: 瀏覽器 / 裝置
+      placeholder: Chrome 128 / iPhone 15 Safari
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 錯誤訊息
+      description: 整段貼上,不要只貼最後一行。
+      render: shell
+
+  - type: textarea
+    id: rootcause
+    attributes:
+      label: 根本原因
+      description: 修好之後回來填。這一格會變成 learning-log 的素材。

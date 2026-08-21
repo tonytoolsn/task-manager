@@ -1,0 +1,67 @@
+name: 功能
+description: 新增一個功能
+title: "[feat] "
+labels: ["type:feat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        一張票應該小到**一天內能做完**。估到 L 就該拆成多張。
+
+  - type: textarea
+    id: requirement
+    attributes:
+      label: 需求
+      description: 一句話說明使用者要能做什麼
+      placeholder: 使用者可以篩選只看某個狀態的任務
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 驗收條件
+      description: 具體、可驗證。錯誤情況也要寫。這是一張票最重要的部分。
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 有對應的測試
+    validations:
+      required: true
+
+  - type: input
+    id: related
+    attributes:
+      label: 相關文件
+      placeholder: api-spec.md §3.1、線框稿 2c
+
+  - type: dropdown
+    id: hat
+    attributes:
+      label: 帽子
+      options:
+        - PM
+        - 設計
+        - 後端
+        - 前端
+        - DevOps
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: 估時
+      options:
+        - XS - 半天以內
+        - S - 1 天
+        - M - 2 天
+        - L - 3 天以上（該拆了）
+    validations:
+      required: true
+
+  - type: input
+    id: actual
+    attributes:
+      label: 實際花費
+      description: 完成後回來填。三個 Sprint 後才會知道自己的偏差倍率。

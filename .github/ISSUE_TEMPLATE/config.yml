@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 開發流程文件
+    url: https://github.com/tonytoolsn/task-manager/blob/main/docs/一人團隊操作手冊.md
+    about: 開票前先確認驗收條件該怎麼寫
+
+  - name: GitHub 設定指南
+    url: https://github.com/tonytoolsn/task-manager/blob/main/docs/github-setup.md
+    about: 標籤、里程碑、看板的定義與使用時機

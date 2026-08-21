@@ -1,0 +1,47 @@
+name: 研究
+description: 純研究,產出是「知道怎麼做」而非功能
+title: "[spike] "
+labels: ["type:spike"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Spike 沒有功能產出,但它是真實的工作。
+        **一定要設時間盒**,否則會無限研究下去。
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 要回答的問題
+      placeholder: Laravel 部署到 Railway,SQLite 換 PostgreSQL 要改哪些地方?
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完成的定義
+      description: 拿到什麼答案才算結束
+      value: |
+        - [ ] 能寫出具體步驟
+        - [ ] 已在本機或測試環境驗證過
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timebox
+    attributes:
+      label: 時間盒
+      description: 超過就停止,用當下已知的資訊做決定
+      options:
+        - 2 小時
+        - 半天
+        - 1 天
+    validations:
+      required: true
+
+  - type: textarea
+    id: conclusion
+    attributes:
+      label: 結論
+      description: 研究完回來填。這格的內容應該同步寫進 learning-log.md。
