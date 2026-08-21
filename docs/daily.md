@@ -7,11 +7,9 @@
 
 ## 2026-08-20 🎩 PM
 
-昨天:
-今天: 
-    建立，github。
-    新增 Project 看板
-    建立標籤
-卡住:
+昨天:—
+今天:設定 repo、branch protection、看板、標籤;開完 Sprint 1 八張票
+卡住:無
+明天:開始 #2,建立 Laravel 專案
 
 ---

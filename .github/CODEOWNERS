@@ -1,0 +1,13 @@
+# 每個路徑的預設 reviewer。
+# 一人專案用不到（GitHub 不會要求你 review 自己的 PR）,
+# 但保留此檔可作為「哪些區域由誰負責」的紀錄。
+#
+# 格式:<路徑>  <@使用者 或 @組織/團隊>
+
+*                   @tonytoolsn
+
+# 未來有協作者時的分工範例:
+# /task-api/        @backend-dev
+# /task-web/        @frontend-dev
+# /.github/         @tonytoolsn
+# /docs/            @tonytoolsn
